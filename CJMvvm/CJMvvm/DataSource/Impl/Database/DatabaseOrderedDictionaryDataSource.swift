@@ -1,19 +1,33 @@
 //
-//  DataHelper.swift
-//  SelectionCollectionView
+//  DatabaseOrderedDictionaryDataSource.swift
+//  CJMvvm
 //
-//  Created by green on 15/8/24.
+//  Created by green on 15/8/25.
 //  Copyright (c) 2015年 com.chenchangqing. All rights reserved.
 //
 
 import UIKit
 
-class DataHelper: NSObject {
-   
+class DatabaseOrderedDictionaryDataSource: OrderedDictionaryDataSourceProtocol {
+    
     /**
-     * 获得来自json的数据源
+     * 单例
      */
-    class func dataSource(fileName:String) -> OrderedDictionary<CJCollectionViewHeaderModel,[CJCollectionViewCellModel]> {
+    class func shareInstance() -> OrderedDictionaryDataSourceProtocol{
+        
+        struct CJSingleton{
+            static var predicate:dispatch_once_t = 0
+            static var instance:OrderedDictionaryDataSourceProtocol? = nil
+        }
+        
+        dispatch_once(&CJSingleton.predicate,{
+            
+            CJSingleton.instance=DatabaseOrderedDictionaryDataSource()
+        })
+        return CJSingleton.instance!
+    }
+   
+    func queryDictionary(fileName:String) -> OrderedDictionary<CJCollectionViewHeaderModel, [CJCollectionViewCellModel]> {
         
         // 单例
         struct DataSourceSingleton{
@@ -100,5 +114,6 @@ class DataHelper: NSObject {
         })
         
         return DataSourceSingleton.instance
+
     }
 }

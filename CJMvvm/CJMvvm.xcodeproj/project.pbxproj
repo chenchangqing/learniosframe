@@ -17,11 +17,20 @@
 		E6F41A491B8C2D6D008849DB /* CJCollectionViewEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A431B8C2D6D008849DB /* CJCollectionViewEmptyCell.swift */; };
 		E6F41A4A1B8C2D6D008849DB /* CJCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A451B8C2D6D008849DB /* CJCollectionViewHeader.swift */; };
 		E6F41A4B1B8C2D6D008849DB /* CJSelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A471B8C2D6D008849DB /* CJSelectionCollectionView.swift */; };
-		E6F41A4D1B8C2DD9008849DB /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A4C1B8C2DD9008849DB /* DataHelper.swift */; };
 		E6F41A561B8C2E08008849DB /* UIButton+CollectionCellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A501B8C2E08008849DB /* UIButton+CollectionCellStyle.m */; };
 		E6F41A571B8C2E08008849DB /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A521B8C2E08008849DB /* OrderedDictionary.swift */; };
 		E6F41A581B8C2E08008849DB /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A551B8C2E08008849DB /* UICollectionViewLeftAlignedLayout.m */; };
 		E6F41A5C1B8C2FCC008849DB /* filter.json in Resources */ = {isa = PBXBuildFile; fileRef = E6F41A5B1B8C2FCC008849DB /* filter.json */; };
+		E6F41A611B8C310D008849DB /* CJCollectionViewHeaderModelTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A601B8C310D008849DB /* CJCollectionViewHeaderModelTypeEnum.swift */; };
+		E6F41A661B8C31E9008849DB /* CJCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A651B8C31E9008849DB /* CJCollectionViewCellDelegate.swift */; };
+		E6F41A6A1B8C328B008849DB /* CJCollectionViewCellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A691B8C328B008849DB /* CJCollectionViewCellButton.swift */; };
+		E6F41A6C1B8C32CB008849DB /* CJCollectionViewHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A6B1B8C32CB008849DB /* CJCollectionViewHeaderDelegate.swift */; };
+		E6F41A8B1B8C4472008849DB /* DatabaseOrderedDictionaryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A881B8C4472008849DB /* DatabaseOrderedDictionaryDataSource.swift */; };
+		E6F41A8C1B8C4472008849DB /* OrderedDictionaryDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A8A1B8C4472008849DB /* OrderedDictionaryDataSourceProtocol.swift */; };
+		E6F41A911B8C4483008849DB /* QueryCategoryDataCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A8F1B8C4483008849DB /* QueryCategoryDataCommand.swift */; };
+		E6F41A961B8C4DD2008849DB /* QueryCategoryDataViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A951B8C4DD2008849DB /* QueryCategoryDataViewModelProtocol.swift */; };
+		E6F41A981B8C4FDD008849DB /* QueryCategoryDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A971B8C4FDD008849DB /* QueryCategoryDataViewModel.swift */; };
+		E6F41A9A1B8C5355008849DB /* QueryCategoryDataCommandProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F41A991B8C5355008849DB /* QueryCategoryDataCommandProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +58,6 @@
 		E6F41A431B8C2D6D008849DB /* CJCollectionViewEmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCollectionViewEmptyCell.swift; sourceTree = "<group>"; };
 		E6F41A451B8C2D6D008849DB /* CJCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCollectionViewHeader.swift; sourceTree = "<group>"; };
 		E6F41A471B8C2D6D008849DB /* CJSelectionCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJSelectionCollectionView.swift; sourceTree = "<group>"; };
-		E6F41A4C1B8C2DD9008849DB /* DataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		E6F41A4F1B8C2E08008849DB /* UIButton+CollectionCellStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CollectionCellStyle.h"; sourceTree = "<group>"; };
 		E6F41A501B8C2E08008849DB /* UIButton+CollectionCellStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CollectionCellStyle.m"; sourceTree = "<group>"; };
 		E6F41A521B8C2E08008849DB /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
@@ -57,6 +65,16 @@
 		E6F41A551B8C2E08008849DB /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 		E6F41A5A1B8C2E43008849DB /* CJMvvm-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJMvvm-Bridging-Header.h"; sourceTree = "<group>"; };
 		E6F41A5B1B8C2FCC008849DB /* filter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filter.json; sourceTree = "<group>"; };
+		E6F41A601B8C310D008849DB /* CJCollectionViewHeaderModelTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCollectionViewHeaderModelTypeEnum.swift; sourceTree = "<group>"; };
+		E6F41A651B8C31E9008849DB /* CJCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
+		E6F41A691B8C328B008849DB /* CJCollectionViewCellButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCollectionViewCellButton.swift; sourceTree = "<group>"; };
+		E6F41A6B1B8C32CB008849DB /* CJCollectionViewHeaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCollectionViewHeaderDelegate.swift; sourceTree = "<group>"; };
+		E6F41A881B8C4472008849DB /* DatabaseOrderedDictionaryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseOrderedDictionaryDataSource.swift; sourceTree = "<group>"; };
+		E6F41A8A1B8C4472008849DB /* OrderedDictionaryDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionaryDataSourceProtocol.swift; sourceTree = "<group>"; };
+		E6F41A8F1B8C4483008849DB /* QueryCategoryDataCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryCategoryDataCommand.swift; sourceTree = "<group>"; };
+		E6F41A951B8C4DD2008849DB /* QueryCategoryDataViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryCategoryDataViewModelProtocol.swift; sourceTree = "<group>"; };
+		E6F41A971B8C4FDD008849DB /* QueryCategoryDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryCategoryDataViewModel.swift; sourceTree = "<group>"; };
+		E6F41A991B8C5355008849DB /* QueryCategoryDataCommandProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryCategoryDataCommandProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +120,7 @@
 				E6F41A351B8C29C3008849DB /* Views */,
 				E6F41A341B8C29C3008849DB /* ViewMoldels */,
 				E6F41A2F1B8C29C3008849DB /* Commands */,
+				E6F41A701B8C372E008849DB /* DataSource */,
 				E6F41A3C1B8C2BDF008849DB /* Models */,
 				E6F41A391B8C2A26008849DB /* Resources */,
 				E6F41A2D1B8C29C3008849DB /* AppDelegate */,
@@ -148,6 +167,8 @@
 		E6F41A2F1B8C29C3008849DB /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A991B8C5355008849DB /* QueryCategoryDataCommandProtocol.swift */,
+				E6F41A8E1B8C4483008849DB /* Impl */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -174,7 +195,6 @@
 		E6F41A331B8C29C3008849DB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E6F41A4C1B8C2DD9008849DB /* DataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -182,6 +202,8 @@
 		E6F41A341B8C29C3008849DB /* ViewMoldels */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A951B8C4DD2008849DB /* QueryCategoryDataViewModelProtocol.swift */,
+				E6F41A921B8C4BAC008849DB /* Impl */,
 			);
 			path = ViewMoldels;
 			sourceTree = "<group>";
@@ -189,6 +211,7 @@
 		E6F41A351B8C29C3008849DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A671B8C3269008849DB /* Button */,
 				E6F41A411B8C2D6D008849DB /* Cell */,
 				E6F41A441B8C2D6D008849DB /* Header */,
 				E6F41A461B8C2D6D008849DB /* View */,
@@ -208,6 +231,7 @@
 		E6F41A3C1B8C2BDF008849DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A5F1B8C30FF008849DB /* Enums */,
 				E6F41A3D1B8C2C09008849DB /* CJCollectionViewCellModel.swift */,
 				E6F41A3E1B8C2C09008849DB /* CJCollectionViewHeaderModel.swift */,
 			);
@@ -217,6 +241,7 @@
 		E6F41A411B8C2D6D008849DB /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A621B8C31B3008849DB /* Protocol */,
 				E6F41A421B8C2D6D008849DB /* CJCollectionViewCell.swift */,
 				E6F41A431B8C2D6D008849DB /* CJCollectionViewEmptyCell.swift */,
 			);
@@ -226,6 +251,7 @@
 		E6F41A441B8C2D6D008849DB /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A631B8C31B8008849DB /* Protocol */,
 				E6F41A451B8C2D6D008849DB /* CJCollectionViewHeader.swift */,
 			);
 			path = Header;
@@ -234,6 +260,7 @@
 		E6F41A461B8C2D6D008849DB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6F41A641B8C31BE008849DB /* Protocol */,
 				E6F41A471B8C2D6D008849DB /* CJSelectionCollectionView.swift */,
 			);
 			path = View;
@@ -271,6 +298,110 @@
 				E6F41A5A1B8C2E43008849DB /* CJMvvm-Bridging-Header.h */,
 			);
 			path = "Bridging-Header";
+			sourceTree = "<group>";
+		};
+		E6F41A5F1B8C30FF008849DB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A601B8C310D008849DB /* CJCollectionViewHeaderModelTypeEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		E6F41A621B8C31B3008849DB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A651B8C31E9008849DB /* CJCollectionViewCellDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E6F41A631B8C31B8008849DB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A6B1B8C32CB008849DB /* CJCollectionViewHeaderDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E6F41A641B8C31BE008849DB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E6F41A671B8C3269008849DB /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A681B8C3269008849DB /* Protocol */,
+				E6F41A691B8C328B008849DB /* CJCollectionViewCellButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		E6F41A681B8C3269008849DB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E6F41A701B8C372E008849DB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A8A1B8C4472008849DB /* OrderedDictionaryDataSourceProtocol.swift */,
+				E6F41A851B8C4472008849DB /* Impl */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E6F41A851B8C4472008849DB /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A861B8C4472008849DB /* Cache */,
+				E6F41A871B8C4472008849DB /* Database */,
+				E6F41A891B8C4472008849DB /* Network */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		E6F41A861B8C4472008849DB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		E6F41A871B8C4472008849DB /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A881B8C4472008849DB /* DatabaseOrderedDictionaryDataSource.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		E6F41A891B8C4472008849DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E6F41A8E1B8C4483008849DB /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A8F1B8C4483008849DB /* QueryCategoryDataCommand.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		E6F41A921B8C4BAC008849DB /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				E6F41A971B8C4FDD008849DB /* QueryCategoryDataViewModel.swift */,
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,18 +503,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F41A4D1B8C2DD9008849DB /* DataHelper.swift in Sources */,
 				E6F41A561B8C2E08008849DB /* UIButton+CollectionCellStyle.m in Sources */,
 				E6F41A3F1B8C2C09008849DB /* CJCollectionViewCellModel.swift in Sources */,
+				E6F41A981B8C4FDD008849DB /* QueryCategoryDataViewModel.swift in Sources */,
 				E6F41A371B8C29C3008849DB /* ViewController.swift in Sources */,
 				E6F41A581B8C2E08008849DB /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				E6F41A961B8C4DD2008849DB /* QueryCategoryDataViewModelProtocol.swift in Sources */,
 				E6F41A481B8C2D6D008849DB /* CJCollectionViewCell.swift in Sources */,
+				E6F41A911B8C4483008849DB /* QueryCategoryDataCommand.swift in Sources */,
 				E6F41A491B8C2D6D008849DB /* CJCollectionViewEmptyCell.swift in Sources */,
+				E6F41A8C1B8C4472008849DB /* OrderedDictionaryDataSourceProtocol.swift in Sources */,
+				E6F41A6C1B8C32CB008849DB /* CJCollectionViewHeaderDelegate.swift in Sources */,
+				E6F41A611B8C310D008849DB /* CJCollectionViewHeaderModelTypeEnum.swift in Sources */,
 				E6F41A4B1B8C2D6D008849DB /* CJSelectionCollectionView.swift in Sources */,
+				E6F41A6A1B8C328B008849DB /* CJCollectionViewCellButton.swift in Sources */,
 				E6F41A4A1B8C2D6D008849DB /* CJCollectionViewHeader.swift in Sources */,
 				E6F41A401B8C2C09008849DB /* CJCollectionViewHeaderModel.swift in Sources */,
 				E6F41A571B8C2E08008849DB /* OrderedDictionary.swift in Sources */,
+				E6F41A9A1B8C5355008849DB /* QueryCategoryDataCommandProtocol.swift in Sources */,
+				E6F41A661B8C31E9008849DB /* CJCollectionViewCellDelegate.swift in Sources */,
 				E6F41A361B8C29C3008849DB /* AppDelegate.swift in Sources */,
+				E6F41A8B1B8C4472008849DB /* DatabaseOrderedDictionaryDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

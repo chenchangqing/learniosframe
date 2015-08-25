@@ -8,12 +8,6 @@
 
 import UIKit
 
-@objc protocol CJCollectionViewHeaderDelegate {
-    
-    func collectionViewHeaderMoreBtnClicked(sender:UIButton)
-    func collectionViewHeaderClearBtnClicked(sender:UIButton)
-}
-
 /**
  * collectionView header
  */

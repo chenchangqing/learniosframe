@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet private weak var selectionCollectionView: CJSelectionCollectionView!
+    private var viewModel: QueryCategoryDataViewModelProtocol = QueryCategoryDataViewModel(fileName: "filter")
     
     // MARK: -
     
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
     
     private func setupSelectionCollectionView() {
         
-        self.selectionCollectionView.dataSource = DataHelper.dataSource("filter")
+        self.selectionCollectionView.dataSource = viewModel.dataSource
         selectionCollectionView.cellClicked = {cellModel in
             
             println(cellModel.title)

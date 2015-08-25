@@ -8,19 +8,6 @@
 
 import UIKit
 
-@objc protocol CJCollectionViewCellDelegate {
-    
-    func collectionViewCellClicked(sender:CJCollectionViewCellButton)
-}
-
-/**
- * collectionView cell button
- */
-class CJCollectionViewCellButton: UIButton {
-    
-    var indexPath: NSIndexPath!
-}
-
 /**
  * collectionView cell
  */

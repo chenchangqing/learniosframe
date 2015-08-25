@@ -8,41 +8,6 @@
 
 import UIKit
 
-enum CJCollectionViewHeaderModelTypeEnum : String {
-    
-    case MultipleChoice = "多选"
-    case SingleChoice   = "单选"
-    case SingleClick    = "单击"
-    
-    static let allValues = [MultipleChoice,SingleChoice,SingleClick]
-    
-    // 位置
-    var index : Int {
-        
-        get {
-            
-            for var i = 0; i < CJCollectionViewHeaderModelTypeEnum.allValues.count; i++ {
-                
-                if self == CJCollectionViewHeaderModelTypeEnum.allValues[i] {
-                    
-                    return i
-                }
-            }
-            return -1
-        }
-    }
-    
-    // 查询指定位置的元素
-    static func instance(index:Int) -> CJCollectionViewHeaderModelTypeEnum? {
-        
-        if index >= 0 && index < CJCollectionViewHeaderModelTypeEnum.allValues.count {
-            
-            return CJCollectionViewHeaderModelTypeEnum.allValues[index]
-        }
-        return nil
-    }
-}
-
 class CJCollectionViewHeaderModel: NSObject,NSCopying {
     
     var icon    : String? // 图片
